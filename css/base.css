@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {box-sizing: border-box;}
+html {scroll-behavior: smooth;}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #1f1f1f;
+    color: #fefef7;
+
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+/*navbar*/
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 65px;
+    position: sticky;
+    top: 0;
+
+    background-color: #0f0f0f;
+}
+
+.navbar > .brand {
+    font-size: x-large;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.navbar > .brand > img {
+    height: 35px;
+}
