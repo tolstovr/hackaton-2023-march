@@ -20,6 +20,17 @@ a {
     text-decoration: none;
 }
 
+.a {
+    color: #15f;
+}
+
+.a:hover {
+    color: #00f;
+}
+
+.hres {display: inherit;}
+.lres {display: none !important;}
+
 /*navbar*/
 .navbar {
     display: flex;
@@ -31,7 +42,11 @@ a {
     position: sticky;
     top: 0;
 
-    background-color: #0f0f0f;
+    background-color: #0f0f0fee;
+    transition: .25s ease-out;
+    box-shadow: 0 0 5px black;
+
+    z-index: 100;
 }
 
 .navbar > .brand {
@@ -44,4 +59,20 @@ a {
 
 .navbar > .brand > img {
     height: 35px;
+}
+
+/*main*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 25px 50px;
+}
+
+.box {
+    border-radius: 15px;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 5px black;
+    padding: 10px 25px;
+    margin: 15px 0;
 }
