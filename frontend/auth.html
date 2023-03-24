@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Регистрация и вход
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/auth.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/auth.low.css')}}" media="screen and (max-width: 1024px)">
+{% endblock %}
+
+{% block main %}
+<form method="post">
+    <input type="text" name="email" autocomplete="email" placeholder="Электронная почта" class="input">
+    <input type="text" name="name" autocomplete="name" placeholder="Имя" class="input">
+    <input type="password" name="password" autocomplete="email" placeholder="Пароль" class="input">
+</form>
+{% endblock %}
